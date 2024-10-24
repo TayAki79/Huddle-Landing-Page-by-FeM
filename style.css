@@ -1,7 +1,22 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 25px;
+  padding: 50px 25px 25px 25px;
+
+  /* Background Styling */
+
+  background-image: url(./images/bg-section-top-mobile-1.svg),
+    linear-gradient(#f6fbff, #f6fbff),
+    url(./images/bg-section-bottom-mobile-1.svg),
+    url(./images/bg-section-top-mobile-2.svg), linear-gradient(#f6fbff, #f6fbff),
+    url(./images/bg-section-bottom-mobile-2.svg),
+    url(./images/bg-footer-top-mobile.svg), linear-gradient(#00252e, #00252e);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat;
+  background-position: 0 28%, 0 34.5%, 0 42.7%, 0 60%, 0 68.65%, 0 74%, 0 85%,
+    0 100%;
+  background-size: 100% 150px, 100% 525px, 100% 60px, 100% 110px, 100% 500px,
+    100% 110px, 100% 50px, 100% 660px;
 }
 
 h2,
@@ -39,7 +54,8 @@ nav > img {
   float: right;
 }
 
-.illustrations {
+.illustrations,
+.use-cases-images {
   width: 80%;
 }
 
@@ -87,6 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding-bottom: 280px;
 }
 
 #stats img {
@@ -101,36 +118,45 @@ main {
   margin: 0;
 }
 
-.stat-desc {
-  margin-top: 0;
-  margin-bottom: 100px;
+.mobile {
+  display: none;
+}
+
+.messages-sent > .stat-desc {
+  margin: 0;
 }
 
 /* Use Cases */
-
-#use-cases > div {
-  margin-top: 170px;
-}
-
 #use-cases {
   margin-bottom: 250px;
+}
+
+.flowing-conversation,
+.your-users {
+  margin-top: 300px;
 }
 
 /* CTA */
 
 #cta {
-  margin-bottom: 280px;
+  margin-bottom: 200px;
 }
 
 #cta h2 {
   margin-bottom: 35px;
 }
 
+/* Footer */
+
+footer {
+  color: white;
+}
+
 /* Newsletter */
 
 #newsletter {
   text-align: left;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 #newsletter h3 {
@@ -148,7 +174,7 @@ input {
   height: 40px;
   border-radius: 10px;
   border: none;
-  background-color: yellow;
+  background-color: white;
   margin-top: 30px;
   padding: 0;
 }
@@ -161,25 +187,211 @@ input {
   border-radius: 10px;
   border: none;
   background-color: hsl(322, 100%, 66%);
-  color: white;
   margin-top: 15px;
   float: right;
 }
 
-/* Footer */
-/* Logo */
-img[style*="--mask:"] {
-  --mask_: var(--mask) center / contain no-repeat;
-  /* for absolute path only */
-  -webkit-mask: var(--mask_);
-  mask: var(--mask_);
-  /* push image out of view */
-  object-position: 9999in;
-  /* use background to set the color */
-  background: white;
+/* Text */
+
+/* Contact Infos */
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.phone > img,
+.email > img {
+  padding: 10px 20px 10px 0;
+}
+
+footer > p {
+  margin-bottom: 30px;
+}
+
+footer > .email {
+  margin-bottom: 30px;
 }
 
 /* Socials */
-.facebook-icon {
-  background-color: blue;
+
+.socials {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+}
+
+/* Media Queries */
+@media (min-width: 376px) {
+  body {
+    padding: 80px 60px 50px;
+
+    /* Background Styling */
+
+    background-image: url(./images/bg-section-top-desktop-1.svg),
+      linear-gradient(#f6fbff, #f6fbff),
+      url(./images/bg-section-bottom-desktop-1.svg),
+      url(./images/bg-section-top-desktop-2.svg),
+      linear-gradient(#f6fbff, #f6fbff),
+      url(./images/bg-section-bottom-desktop-2.svg),
+      url(./images/bg-footer-top-desktop.svg), linear-gradient(#00252e, #00252e);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat, no-repeat, no-repeat;
+    background-position: 0 36%, 0 42%, 0 49%, 0 65.5%, 0 74%, 0 78.5%, 0 85%,
+      0 100%;
+    background-size: 100% 150px, 100% 525px, 100% 60px, 100% 110px, 100% 500px,
+      100% 110px, 100% 50px, 100% 660px;
+  }
+
+  main,
+  footer {
+    padding: 0 80px;
+  }
+
+  /* Navigation Bar */
+
+  nav > img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .try-free {
+    width: 120px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  /* Landing Page */
+  h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #landing-page > p {
+    width: 500px;
+  }
+
+  .get-started {
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: none;
+    width: 320px;
+    height: 60px;
+    margin-bottom: 80px;
+  }
+
+  /* Stats */
+
+  #stats {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 280px;
+  }
+
+  #stats img {
+    width: 22%;
+    margin: 0;
+  }
+
+  .stat-nr {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .messages-sent > .stat-desc {
+    margin: 0;
+  }
+
+  /* Use Cases */
+
+  .use-cases-images {
+    width: 40%;
+  }
+
+  .text-container {
+    text-align: left;
+    width: 40%;
+  }
+
+  .grow-together {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .flowing-conversation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .your-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .footer-container {
+    width: 30%;
+  }
+
+  .phone {
+    margin-bottom: 0;
+  }
+
+  .socials {
+    margin-top: 50px;
+  }
+
+  #newsletter {
+    width: 40%;
+  }
+
+  #newsletter > h3 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  #newsletter > p {
+    width: 80%;
+  }
+
+  .input-button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .subscribe {
+    font-size: 1rem;
+    color: white;
+    height: 40px;
+    margin-top: 30px;
+  }
 }
