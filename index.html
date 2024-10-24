@@ -41,7 +41,7 @@
         <button class="get-started">Get Started For Free</button>
         <img
           class="illustrations"
-          src="/images/screen-mockups.svg"
+          src="./images/screen-mockups.svg"
           alt="screen-mockups"
         />
       </div>
@@ -57,10 +57,8 @@
         <div class="messages-sent">
           <img src="./images/icon-messages.svg" alt="messages-icon" />
           <p class="stat-nr">2.7m+</p>
-          <p class="stat-desc">
-            Messages <br />
-            Sent
-          </p>
+          <p class="stat-desc">Messages <span class="mobile">Sent</span></p>
+          <p class="stat-desc desktop">Sent</p>
         </div>
       </div>
 
@@ -69,42 +67,48 @@
       <div id="use-cases">
         <div class="grow-together">
           <img
-            class="illustrations"
+            class="use-cases-images"
             src="./images/illustration-grow-together.svg"
             alt="grow-together-image"
           />
-          <h3>Grow Together</h3>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form
-          </p>
+          <div class="text-container">
+            <h3>Grow Together</h3>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form
+            </p>
+          </div>
         </div>
         <div class="flowing-conversation">
           <img
-            class="illustrations"
+            class="use-cases-images"
             src="./images/illustration-flowing-conversation.svg"
             alt="flowing-conversation-image"
           />
-          <h3>Flowing Conversations</h3>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+          <div class="text-container">
+            <h3>Flowing Conversations</h3>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
         </div>
         <div class="your-users">
           <img
-            class="illustrations"
+            class="use-cases-images"
             src="./images/illustration-your-users.svg"
             alt="your-users-image"
           />
-          <h3>Your Users</h3>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+          <div class="text-container">
+            <h3>Your Users</h3>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -114,8 +118,9 @@
         <h2>Ready To Build Your Community?</h2>
         <button class="get-started">Get Started For Free</button>
       </div>
-
-      <!-- 5: newsletter form -->
+    </main>
+    <footer>
+      <!-- Newsletter form -->
 
       <div id="newsletter">
         <h3>Newsletter</h3>
@@ -123,41 +128,33 @@
           To receive tips on how to grow your community, sign up to our weekly
           newsletter. We'll never send you spam or pass on your email address.
         </p>
-        <input type="email" />
-        <button class="subscribe">Subscribe</button>
+        <div class="input-button">
+          <input type="email" />
+          <button class="subscribe">Subscribe</button>
+        </div>
       </div>
-    </main>
-    <footer>
-      <img
-        src="./images/logo.svg"
-        alt="logo"
-        style="--mask: url(./images/logo.svg)"
-      />
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore
-      </p>
-      <div class="phone">
-        <img src="" alt="" />
-        <p>Phone: +1-543-123-4567</p>
+
+      <!-- Logo -->
+      <div class="footer-container">
+        <img src="./images/logo_footer.svg" alt="logo" />
+        <p class="logo_text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore
+        </p>
+        <div class="phone">
+          <img src="./images/icon-phone.svg" alt="phone-icon" />
+          <p>Phone: +1-543-123-4567</p>
+        </div>
+        <div class="email">
+          <img src="./images/icon-email.svg" alt="email-icon" />
+          <p>example@company.com</p>
+        </div>
+        <div class="socials">
+          <img src="./images/facebook-icon.svg" alt="facebook-icon" />
+          <img src="./images/instagram-icon.svg" alt="instagram-icon" />
+          <img src="./images/twitter-icon.svg" alt="twitter-icon" />
+        </div>
       </div>
-      <div class="email">
-        <img src="" alt="" />
-        <p>example@company.com</p>
-      </div>
-      <svg
-        class="facebook-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-      >
-        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-        <path
-          d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
-        />
-      </svg>
-      <img src="" alt="facebook-icon" />
-      <img src="" alt="instagram-icon" />
-      <img src="" alt="twitter-icon" />
     </footer>
   </body>
 </html>
